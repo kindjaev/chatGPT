@@ -1,0 +1,40 @@
+/* .hero {
+    height: 95vh;
+    width: 100%;
+    overflow: hidden;
+}
+.whale {
+    position: absolute;
+    bottom: -50px;
+    transform: scaleX(-1);
+    right: -140px;
+} */
+.homepage {
+    background-image: url('../assets/images/bg-moon.png');
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+.card {
+    position: relative;
+    /* -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent); */
+
+}
+.card:after {
+    content:'';
+    position: absolute;
+    top: 52%;
+    left: 0;
+    background: linear-gradient(180deg, transparent, white 50%);
+    height: 20px;
+    width: 100%;
+    /* -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent); */
+  }
+
+/* Media */
+@media screen and (max-width: 639px){
+    .homepage {
+        background-size: 90% auto;
+    }
+}
