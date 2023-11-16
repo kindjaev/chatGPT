@@ -1,13 +1,12 @@
-import { getAuth, signOut } from "firebase/auth";
+import { signOut } from "firebase/auth";
 import { auth } from "../../utils/firebase.js";
 import toast from "react-hot-toast";
-import { useAuthState } from "react-firebase-hooks/auth";
 
 function SignOut() {
-  const [user] = useAuthState(auth);
   const handleClick = async () => {
     const notification = toast.loading("Singing out...");
     await signOut(auth);
+    localStorage.removeItem("user");
     // toast to say successful
     toast.success("Signed out", {
       id: notification,

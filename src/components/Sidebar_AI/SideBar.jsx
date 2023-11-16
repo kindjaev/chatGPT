@@ -1,4 +1,3 @@
-import React from "react";
 import NewChat from "./NewChat";
 
 import { query, orderBy, collection } from "firebase/firestore";

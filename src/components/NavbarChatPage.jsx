@@ -1,6 +1,4 @@
-import React from "react";
 import logo from "../assets/whale-logo.png";
-import bgMoon from "../assets/images/bg-moon.png";
 import SignOut from "./Navbar/SignOut";
 
 function Navbar() {

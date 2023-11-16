@@ -1,9 +1,7 @@
 import Input from "./Input";
 import ChatMessages from "./ChatMessages";
 import { useParams } from "react-router-dom";
-import whale from "../../assets/images/whale2.png";
 import logo from "../../assets/whale-logo.png";
-import { useEffect, useRef } from "react";
 
 function Chat() {
   let { id } = useParams();

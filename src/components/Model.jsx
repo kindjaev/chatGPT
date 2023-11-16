@@ -1,6 +1,3 @@
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import { BsArrowDownCircle } from "react-icons/bs";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { AiOutlineWechat } from "react-icons/ai";
 

@@ -1,7 +1,6 @@
 import { BsChatRightDots, BsTrash } from "react-icons/bs";
 
-import { query, collection, doc, deleteDoc } from "firebase/firestore";
-import { useCollection } from "react-firebase-hooks/firestore";
+import { doc, deleteDoc } from "firebase/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams, useNavigate, Link } from "react-router-dom";
 
@@ -20,11 +19,6 @@ function ChatRow({ id: userId, chatRow }) {
   let { id } = useParams();
 
   const { title } = chatRow;
-
-  // GET MESSAGES
-  const [messages, loading, error] = useCollection(
-    query(collection(db, "users", user?.email, "chats", userId, "messages"))
-  );
 
   // DELETE CHAT ROW
   const deleteChat = async () => {

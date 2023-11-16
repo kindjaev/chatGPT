@@ -20,10 +20,10 @@ function ChatMessages({ id }) {
       )
   );
 
-  const scroll = document.querySelector("#scroll");
+  const scroll = document.querySelector("#input-form");
 
   useEffect(() => {
-    messages && scroll.lastChild.scrollIntoView({ behavior: "smooth" });
+    scroll && scroll.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   return (

@@ -71,6 +71,7 @@ function Input({ id }) {
       <form
         onSubmit={(e) => handleSubmit(e)}
         className="flex px-8 rounded-lg border text-lg shadow-md mx-auto text-[#404040]"
+        id="input-form"
       >
         <input
           type="text"
